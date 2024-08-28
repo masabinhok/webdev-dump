@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      li {
+        list-style-type: none;
+        padding: 4px;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        width: 100%;
+        text-align: center;
+      }
+    </style>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Subject Picker</title>
+  </head>
+  <body class="bg-blue-600">
+    <div
+      class="container min-h-screen w-full flex flex-col items-center justify-center"
+    >
+      <h1 class="font-bold text-blue-900 text-4xl">
+        Subject <span class="text-white">Picker</span>
+      </h1>
+      <p class="p-2 font-semibold">
+        Can't decide which subject to study first? Let me help you!
+      </p>
+      <div
+        class="display border-2 p-5 flex gap-10 rounded-xl m-5 max-w-[480px] max-sm:max-w-[380px] max-sm:px-4 w-full items-center justify-between bg-blue-500"
+      >
+        <div class="subjects">
+          <ul class="font-semibold text-blue-900">
+            <li>Object Oriented Programming</li>
+            <li>Electric Circuit and Machines</li>
+            <li>Electronice Devices and Circuits</li>
+            <li>Digital Logic</li>
+            <li>Engineering Chemistry</li>
+            <li>Engineering Mathematics</li>
+          </ul>
+        </div>
+        <div
+          class="sub-order flex-1 flex items-center justify-center flex-col rounded-xl text-white font-semibold"
+        >
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+          <li>6</li>
+        </div>
+      </div>
+      <button
+        class="shuffle border-none bg-blue-700 text-white font-semibold px-6 py-3 rounded-xl hover:bg-blue-800 transition-all"
+      >
+        Shuffle
+      </button>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>

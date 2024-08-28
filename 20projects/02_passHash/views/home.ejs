@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HomePage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="flex flex-col items-center justify-center min-h-screen bg-gray-100"
+  >
+    <h1 class="text-4xl font-bold mb-8">HomePage</h1>
+
+    <form action="/user/signup" method="GET" class="mb-4">
+      <button
+        class="bg-blue-600 text-white font-semibold py-2 px-6 rounded-lg shadow-md transition duration-200 hover:bg-blue-700 focus:outline-none"
+      >
+        Sign Up
+      </button>
+    </form>
+
+    <form action="/user/login" method="GET">
+      <button
+        class="bg-green-600 text-white font-semibold py-2 px-6 rounded-lg shadow-md transition duration-200 hover:bg-green-700 focus:outline-none"
+      >
+        Login
+      </button>
+    </form>
+  </body>
+</html>

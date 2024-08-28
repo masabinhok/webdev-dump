@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    .grid-one{
+      display: grid;
+      grid-template-columns: 200px 75px;
+      margin-bottom:40px;
+    }
+    .one{
+      background-color:blue;
+    }
+    .two{
+      background-color:red;
+    }
+
+    .grid-two{
+      display: grid;
+      grid-template-columns: 50px 1fr 75px;
+      margin-bottom:40px;
+    }
+
+    .grid-three{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      margin-bottom:40px;
+      column-gap:20px;
+      row-gap:10px;
+    }
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="grid-one"><div class="one">
+    200px;
+    </div>
+    <div class="two">75px</div></div>
+  
+
+
+    <div class="grid-two">
+      <div style="background-color:blue">col1</div>
+      <div style="background-color:red">col2</div>
+      <div style="background-color:green">col3</div>
+    </div>
+
+
+
+    <div class="grid-three">
+      <div style="background-color:blue">col1</div>
+      <div style="background-color:red">col2</div>
+      <div style="background-color:green">col3</div>
+      <div style="background-color:yellow">col4</div>
+      <div style="background-color:blue">col1</div>
+      <div style="background-color:red">col2</div>
+      <div style="background-color:green">col3</div>
+      <div style="background-color:yellow">col4</div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    .body{
+      font-family:Arial, Helvetica, sans-serif;
+    }
+    .black-overlay{
+    background-color:rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top:0;
+  bottom: 0;
+  right: 0;
+  left:0;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  }
+  .sidebar{
+      position: fixed;
+      color:white;
+      background-color: rgb(0, 255, 0);
+      right:0;
+      top:0;
+      bottom:0;
+      width:100px;
+    }
+
+.modal-div{
+  background-color: white;;
+  padding-right:100px;
+  padding-top:8px;
+  padding-left:16px;
+  padding-bottom:8px;
+  border-radius: 4px;
+  box-shadow:0 0 4px gray;
+  font-family:Arial, Helvetica, sans-serif;
+  
+}
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body style="
+height:3000px;">
+  
+  <div class="sidebar">Right Sidebar</div>
+  <div class="black-overlay">
+    <div class="modal-div">
+      <div style="font-size:16px;
+      margin-bottom:5px;"><b>Modal Title</b></div>
+      <div style="
+      font-size:12px;
+      padding-bottom:5px;">This is a modal</div>
+      <div><button style="font-size:12px;
+      cursor:pointer;"close">Close</button></div>
+    </div>
+  </div>
+
+</body>
+</html>

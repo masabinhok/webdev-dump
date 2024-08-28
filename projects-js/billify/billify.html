@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- montserrat font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Nepali font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="billify.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bill Generator</title>
+  </head>
+  <body>
+    <header>
+      <!-- header section for a bill generator -->
+      <div class="bill-logo">
+        <h1 class="bill-head">बिलify</h1>
+        <p class="bill-slogan">बिलिङ अब सहज छ।</p>
+      </div>
+
+      <div class="hamburger-menu">
+        <span class="ham-bar"></span>
+        <span class="ham-bar"></span>
+        <span class="ham-bar"></span>
+      </div>
+    </header>
+
+    <main>
+      <!-- main section for a bill generator -->
+      <div class="bill">
+        <div class="bill-header">
+          <div class="bill-sub-header1">
+            <div class="bill-header-left">
+              <img src="img/bill-payment.png" />
+            </div>
+            <div class="bill-header-right">
+              <h1 class="bill-head">बिलify</h1>
+              <p class="bill-slogan">बिलिङ अब सहज छ।</p>
+            </div>
+          </div>
+          <div class="bill-sub-header2">
+            <input required class="bill-title js-bill-title" type="text" placeholder="Name" />
+            <input required class="bill-date js-bill-date" type="date" />
+          </div>
+        </div>
+
+        <div class="bill-item-container">
+          <table class="bill-table">
+            <thead>
+              <tr class="bill-item-header">
+                <th class="description">DESCRIPTION</th>
+                <th class="quantity">QTY</th>
+                <th class="price">PRICE</th>
+                <th class="total">TOTAL</th>
+              </tr>
+            </thead>
+          </table>
+
+          <div class="bill-items js-bill-items">
+            <div class="items">
+              <input
+                class="js-description description"
+                type="text"
+                placeholder="Item"
+              />
+              <input class="js-quantity quantity" placeholder="1" type="text" />
+              <input class="js-price price" placeholder="100" type="text" />
+              <input
+                class="total js-total"
+                type="text"
+                placeholder="100"
+                readonly
+              />
+            </div>
+          </div>
+
+          <div class="bill-items-input js-bill-items-input"></div>
+
+          <button class="add-items js-add-items">
+            <p class="add-p">Add Items</p>
+            <span class="add-icon">+</span>
+          </button>
+
+          <div class="grand-total js-grand-total">Grand Total: 0</div>
+          <div class="bill-buttons">
+            <button class="clear-all js-clear-all">CLEAR ALL</button>
+            <button class="generate-bill js-generate-bill">
+              GENERATE BILL
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section class="generate-bill-div js-generate-bill-div">
+      
+    </section>
+
+    <script src="billify.js"></script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.right{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex:2;
+  font-size:24px;
+  justify-content: space-between;
+  color:gray;
+  font-weight:600;
+  
+}
+
+span{
+  font-size:24px;
+  padding:8px;
+
+}
+
+p{
+  font-size:24px;
+  color:gray;
+
+}
+
+.left {
+  flex:4;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

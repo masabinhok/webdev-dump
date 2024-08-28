@@ -1,0 +1,59 @@
+.sparkle-button {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  width: fit-content;
+  font-size: 20px;
+  color: white;
+  background: linear-gradient(45deg, #ff6f61, #de3e4f);
+  text-decoration: none;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.sparkle-button:hover {
+  background: linear-gradient(45deg, #de3e4f, #ff6f61);
+  transform: scale(1.02);
+}
+
+.icon {
+  margin-right: 10px;
+  font-size: 24px;
+}
+
+.sparkle-button::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.8) 0%,
+    rgba(255, 255, 255, 0) 80%
+  );
+  transform: rotate(45deg);
+  animation: sparkle 2s linear infinite;
+}
+
+@keyframes sparkle {
+  0% {
+    transform: rotate(45deg) translate(-50%, -50%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(45deg) translate(50%, 50%);
+    opacity: 0;
+  }
+}
+
+.sparkle-button:active {
+  transform: scale(0.99);
+}

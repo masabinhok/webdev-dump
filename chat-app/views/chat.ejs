@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      /* Reset some default styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        background: linear-gradient(135deg, #f0f2f5, #e0e3e9);
+        padding: 20px;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #333;
+        font-size: 2.5rem;
+      }
+
+      /* Container for chats */
+      .container {
+        width: 100%;
+        max-width: 1320px;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        overflow: hidden;
+        padding: 40px;
+      }
+
+      .chat {
+        padding: 20px;
+        border-bottom: 1px solid #ddd;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .chat:last-child {
+        border-bottom: none;
+      }
+
+      .chat h3 {
+        font-size: 1.5rem;
+        color: #444;
+        margin-bottom: 10px;
+      }
+
+      .chat p {
+        color: #666;
+        font-size: 1rem;
+      }
+
+      .chat button {
+        padding: 12px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin-right: 5px;
+        flex: 1;
+        font-size: 1rem;
+      }
+
+      .chat button:nth-child(1) {
+        background-color: #dc3545;
+        color: white;
+      }
+
+      .chat button:nth-child(2) {
+        background-color: #ffc107;
+        color: white;
+      }
+
+      .chat button:nth-child(3) {
+        background-color: #28a745;
+        color: white;
+      }
+
+      .chat button:hover {
+        opacity: 0.9;
+      }
+
+      /* Flexbox for buttons */
+      .button-group {
+        display: flex;
+        gap: 10px;
+      }
+
+      button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        font-size: 1rem;
+        margin: 16px;
+      }
+
+      /* Media queries for responsiveness */
+      @media (max-width: 768px) {
+        .container {
+          padding: 20px;
+        }
+
+        .chat h3 {
+          font-size: 1.25rem;
+        }
+
+        .chat p {
+          font-size: 0.9rem;
+        }
+
+        .chat button {
+          font-size: 0.9rem;
+          padding: 10px;
+        }
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chats</title>
+  </head>
+  <body>
+    <div>
+      <form action="/">
+        <button>HOME</button>
+      </form>
+    </div>
+    <div class="container">
+      <h1>Chats</h1>
+      <% chats.forEach(chat => { %>
+      <div class="chat">
+        <h3><%= chat.title %></h3>
+        <p><%= chat.description %></p>
+        <div class="button-group">
+          <button>Delete Chat</button>
+          <button>Update Chat</button>
+          <form action="/chat/realchat"><button>Add chat</button></form>
+        </div>
+      </div>
+      <% }) %>
+    </div>
+  </body>
+</html>

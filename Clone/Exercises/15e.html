@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    .container{
+  width:360px;
+  height:400px;
+  box-shadow: 0 0 4px gray;
+      position:relative;
+      display: inline-block;
+    }
+    .hoodie{
+      width:360px;
+      height:360px;
+      object-fit: cover;
+      margin-top:20px;
+
+    }
+    .discount{
+      position: absolute;
+      background-color: black;
+      color:white;
+      padding-left:16px;
+      padding-top:8px;
+      padding-bottom:8px;
+      padding-right:16px;
+      top:4px;
+      right:0;
+      font-size:16px;
+      font-family:roboto, arial;
+    
+
+    }
+    .bottom-overlay{
+      position:absolute;
+      bottom:0;
+      right:0;
+      left:0;
+      background-color:rgba(0,0,0, 0.5);
+      height:140px;
+      align-items:center;
+      display:flex;
+      justify-content: center;
+    }
+    .add-to-cart{
+      border:1px solid rgb(255, 0, 0);
+      background-color:rgb(221, 221, 221);
+      cursor: pointer;
+      font-size:16px;
+      padding:8px;
+      font-family: roboto, arial;
+    }
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body style="height:3000px;">
+  <div class="container">
+    
+      <img class="hoodie" src="hoodie1.jpeg">
+      <div class="discount">20% OFF</div>
+      <div class="bottom-overlay">
+        <button class="add-to-cart">Add to Cart</button>
+      </div> 
+    </div>
+ 
+
+</body>
+</html>

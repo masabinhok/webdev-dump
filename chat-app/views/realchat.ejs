@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Management</title>
+    <style>
+      /* Reset some default styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background: #f0f2f5;
+        padding: 20px;
+      }
+
+      h1 {
+        margin-bottom: 20px;
+        color: #4b4b4b;
+        font-size: 2rem;
+      }
+
+      /* Container for forms */
+      .container {
+        width: 100%;
+        max-width: 600px;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+        padding: 20px;
+      }
+
+      p {
+        margin-bottom: 20px;
+        font-size: 1.2rem;
+        color: #333;
+        text-align: center;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 20px;
+      }
+
+      form input {
+        padding: 12px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 1rem;
+      }
+
+      form button {
+        padding: 12px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: background-color 0.3s;
+      }
+
+      form button[type="submit"] {
+        background-color: #007bff;
+        color: white;
+      }
+
+      form button[type="submit"]:hover {
+        background-color: #0056b3;
+      }
+
+      /* Flexbox for button alignment */
+      .button-group {
+        display: flex;
+        justify-content: center;
+      }
+
+      .button-group button {
+        background-color: #28a745;
+        color: white;
+        margin-left: 10px;
+      }
+
+      .button-group button:first-child {
+        background-color: #007bff;
+      }
+
+      .button-group button:first-child:hover {
+        background-color: #0056b3;
+      }
+
+      .button-group button:last-child {
+        background-color: #dc3545;
+      }
+
+      .button-group button:last-child:hover {
+        background-color: #c82333;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form action="/">
+        <button>HOME</button>
+      </form>
+      <h1>Chat</h1>
+      <form action="/chat/" method="POST">
+        <input type="text" name="title" placeholder="Title" required />
+        <input
+          type="text"
+          name="description"
+          placeholder="Description"
+          required
+        />
+        <button type="submit">Add Chat</button>
+      </form>
+      <div class="button-group">
+        <form method="GET" action="/chat/show">
+          <button type="submit">Show Chats</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

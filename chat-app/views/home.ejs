@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat App Home</title>
+    <style>
+      /* Resetting default styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      /* Setting body background gradient and styling */
+      body {
+        background: linear-gradient(to right, #6a11cb, #2575fc);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding: 20px;
+        color: #fff;
+      }
+
+      /* Styling main container */
+      .container {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 8px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        padding: 40px;
+        text-align: center;
+        max-width: 600px;
+        width: 100%;
+      }
+
+      /* Styling header */
+      h1 {
+        margin-bottom: 20px;
+        font-size: 36px;
+      }
+
+      /* Styling welcome message */
+      .welcome-message {
+        margin-bottom: 40px;
+        font-size: 18px;
+      }
+
+      /* Styling buttons */
+      .button-group {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .button-group form {
+        margin: 0;
+      }
+
+      .button-group button {
+        background: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background 0.3s;
+      }
+
+      .button-group button:hover {
+        background: #0056b3;
+      }
+
+      .logout-button {
+        margin-top: 20px;
+        background: #dc3545;
+        padding: 12px 32px; 
+        border-radius: 8px;
+        border: none;
+      }
+
+      .logout-button:hover {
+        background: #c82333;
+
+      }
+
+      /* Styling footer */
+      footer {
+        margin-top: 40px;
+        font-size: 14px;
+        color: #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to Chat App</h1>
+      <p class="welcome-message">
+        Hello, Ready to start chatting?
+      </p>
+      <div class="button-group">
+        <form method="GET" action="/chat/realchat">
+          <button>Start Chatting</button>
+        </form>
+        <form method="GET" action="/chat/show">
+          <button>Show Chats</button>
+        </form>
+      </div>
+      <form method="GET" action="/user/logout">
+        <button class="logout-button">Logout</button>
+      </form>
+      <footer>&copy; 2024 Chat App. All rights reserved.</footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+.sidebar{
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  width:175px;
+  border-right:1px solid white;
+  justify-content:center;
+  display:flex;
+}
+
+.top-right-container{
+  display:flex;
+  flex-direction:column;
+  height:40px;
+}
+
+.icon-img{
+  width:20px;
+
+  height:20px;
+
+}

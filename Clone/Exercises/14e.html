@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    .container{
+      position: fixed;
+      top:0;
+      right:0;
+      left:0;
+      height:100px;
+
+      display:flex;
+      justify-content: space-between;
+    }
+    .img{width:60px;
+    height:60px;
+  object-fit: cover;
+border-radius: 30px;}
+.left-section{
+  position:fixed;
+  left:100px;
+  display:flex;
+  flex-direction: row;
+  align-items:center;
+  top:20px;
+}
+.right-section{
+  position:fixed;
+  right:80px;
+  top:30px;
+  display:flex;
+  flex-direction: row;
+  align-items:center;
+}
+.add-button{
+  font-size:16px;
+  padding-left:16px;
+  padding-right:16px;
+  padding-top:8px;
+  padding-bottom:8px;
+  color:white;
+  background-color: rgb(0, 119, 255);
+  border:none;
+  border-radius: 4px;
+  font-weight:bold;
+margin-right:8px;
+cursor:pointer;
+}
+.msg-button{
+  font-size:16px;
+  padding-left:16px;
+  padding-right:16px;
+  padding-top:8px;
+  padding-bottom:8px;
+  color:black;
+  background-color:rgb(212, 212, 212);
+  border:none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight:bold;
+}
+.name{
+  margin-left:8px;
+  font-size:24px;
+  margin-top:0px;
+  font-weight:bold;
+}
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facebook Header</title>
+</head>
+<body>
+  <div class="container">
+    <div class="left-section">
+      <div><img class="img" src="sabin.jpg"></div>
+      <div class="name">Sabin Shrestha</div>
+    </div>
+    <div class="right-section">
+      <div class="add-div"><button class="add-button">Add Friend</button></div>
+      <div class="msg-div"><button class="msg-button">Message</button></div>
+    </div>
+  </div>
+</body>
+</html>

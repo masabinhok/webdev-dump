@@ -1,0 +1,93 @@
+.topbar {
+  display: flex;
+  flex-direction: row;
+  padding: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topbarLeft {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  gap: 40px;
+  align-items: center;
+}
+
+.topbarCenter {
+  flex: 1;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  font-size: 100px;
+  font-weight: 700;
+  letter-spacing: 8px;
+  align-items: center;
+  z-index: 100000;
+  align-items: center;
+}
+
+.topbarRight {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 40px;
+  align-items: center;
+}
+
+.topbarLogo {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.signature {
+  width: 200px;
+  object-fit: cover;
+  height: 50px;
+  transform: scale(2);
+  filter: invert();
+}
+
+.hamMenu img {
+  width: 40px;
+  height: 40px;
+}
+
+.hamburger {
+  width: 900px;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  cursor: pointer;
+}
+
+.hamText {
+  font-family: cursive;
+  color: red;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 600px) {
+  .topbar {
+    padding: 16px;
+    justify-content: space-between;
+  }
+  .hamburger {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 1365px) {
+  .topbarRight {
+    visibility: hidden;
+    
+  }
+  .topbarLeft{
+    gap:100px;
+  }
+}

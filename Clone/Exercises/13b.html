@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    .flexbox{
+      height:50px;
+      display:flex;
+      flex-direction:row;
+    }
+    .column1{
+      background-color: lightpink;
+      width:100px;
+
+    }
+    .column2{
+      background-color: lightblue;
+      
+      width:200px;
+
+    }
+    .row2{
+      flex-direction:row;
+      display: flex;
+      justify-content: space-between;
+
+    }
+    .row2-item{
+      background-color: black;
+      color:white;
+    }
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="flexbox">
+    <div class="column1"></div>
+    <div class="column2">
+      <div>row1</div>
+      <div class="row2">
+        <div class="row2-item">row2</div>
+        <div class="row2-item" >row2</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
